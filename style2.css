@@ -21,6 +21,24 @@
      top: 200px;
  }
 
+ .header__second-slogan {
+     position: absolute;
+     left: 200px;
+     top: 230px;
+ }
+
+ .button {
+     width: 40px;
+     height: 30px;
+     padding: 15px 20px;
+ }
+
+ .header__button {
+     position: absolute;
+     right: 200px;
+     bottom: 200px;
+ }
+
  /*<header class="header">
         <img class="header__img">
         <h1 class="header__first-slogan">slogan duzy</h1>
