@@ -1,7 +1,7 @@
-body {
-    margin: 0;
-}
+.menu {}
 
-h1 {
-    font-size: 3em;
-}
+.menu--vertical {}
+
+.menu__item {}
+
+/* zawsze odwolanie bezposrednio przez klase nie ma zagniezdzen */

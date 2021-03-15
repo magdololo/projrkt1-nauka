@@ -3,10 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>10 elementów listy</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nawigacja BEM w kodzie</title>
+    <link rel="stylesheet" href="style.css>">
 </head>
 
-<body></body>
+<body>
+    <!-- //nav>(div>img+span{Cube Ltd.})+ul>li*5>a>img+{link-$} enter//EMMET -->
+    <nav class="menu menu--vertical">
+        <!--menu--vertical to modyficator -->
+        <div class="menu__logo">
+            <img class="menu__logo-image" src="" alt="">
+            <span class="menu__logo-name">Cube Ltd.</span></div>
+        <ul class="menu__list">
+            <li class="menu__item menu__item--open menu__item--color-red"><a class="menu__link" href=""><img
+                        class="menu__icon" src="" alt="">link-1</a></li>
+            <li class="menu__item"><a class="menu__link" href=""><img class="menu__icon" src="" alt="">link-2</a></li>
+            <li class="menu__item"><a class="menu__link" href=""><img class="menu__icon" src="" alt="">link-3</a></li>
+            <li class="menu__item"><a class="menu__link" href=""><img class="menu__icon" src="" alt="">link-4</a></li>
+            <li class="menu__item"><a class="menu__link" href=""><img class="menu__icon" src="" alt="">link-5</a></li>
+    </nav>
+</body>
 
 </html>
