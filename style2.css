@@ -17,20 +17,21 @@
 
  .header__first-slogan {
      position: absolute;
-     left: 200px;
-     top: 200px;
+     left: 120px;
+     top: 100px;
+     font-size: 2em;
  }
 
  .header__second-slogan {
      position: absolute;
-     left: 200px;
-     top: 230px;
+     left: 120px;
+     top: 150px;
  }
 
  .button {
-     width: 40px;
+     width: 90px;
      height: 30px;
-     padding: 15px 20px;
+
  }
 
  .header__button {
@@ -39,42 +40,82 @@
      bottom: 200px;
  }
 
- /*<header class="header">
-        <img class="header__img">
-        <h1 class="header__first-slogan">slogan duzy</h1>
-        <h2 class="header__second-slogan">slogan mały</h2>
-        <button class="button header__button">Wejdź</button>
-    </header>
-    <section class="main">
-        <div class="logo main__logo">
-            <img class="logo__img" src="">
-            <p class="logo__text">Nazwa firmy</p>
-        </div>
-        <ul class="main__list-item">
-            <li class="main__item"><a class="main__link" href="">File</a></li>
-            <li class="main__item"><a class="main__link" href="">Edit</a></li>
-            <li class="main__item"><a class="main__link" href="">View</a></li>
-            <li class="main__item"><a class="main__link" href="">Help</a></li>
-        </ul>
-        </div>
-        <form class="form">
-            <input class="" type="text">
-            <button class="button form__button">Szukaj</button>
-        </form>
-        <article class="article">
-            <h1 class="article__title">Tytuł artykułu</h1>
-            <h3 class="article__date-and-autor">
-                <p class="article__date">Data produkcji -20.07.2019</p>
-                <p class="article__autor">Autor: Jan Nowak</p>
-            </h3>
-            <p class="article__paragraph">Lorem ipsum...</p>
-            <h2 class="article_undertitle">Sródtytuł</h2>
-            <p class="article__paragraph">Lorem ipsum...</p>
-            <button class="button article__button">Czytaj dalej</button>
-        </article>
-    </section>
-    <footer class="footer">
-        <p class="copyright">Copyright</p>
-        <p class="footer__adres">Adres</p>
-    </footer>
-</body> */
+ .main {
+     margin: 20px 100px;
+ }
+
+ .main__logo {
+     width: 30%;
+ }
+
+ .menu {
+     display: flex;
+
+ }
+
+ .menu__list-item {
+     display: flex;
+     list-style-type: none;
+     margin: 20px 0px;
+     width: 70%;
+     border: 1px solid black;
+
+ }
+
+ .manu__item {}
+
+ .menu__link {
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+
+ .menu__link--active {
+     color: lightgrey;
+ }
+
+ .form {
+     float: right;
+ }
+
+ .form__input {
+     height: 30px;
+ }
+
+ .article {
+     margin-top: 50px;
+ }
+
+ .article__date-and-autor {
+     display: flex;
+     font-size: 1.1em;
+     font-weight: normal;
+     margin: 0;
+ }
+
+ .article__date,
+ .article__autor {
+     margin: 0;
+     margin-right: 20px;
+
+ }
+
+ .article__undertitle {
+     font-size: 1em;
+ }
+
+ .article__button {
+     float: right;
+ }
+
+ .footer {
+     display: flex;
+     margin: 50px 100px;
+     border-top: 1px solid black;
+ }
+
+ .footer__adres {
+     margin-left: 60px;
+     ;
+ }

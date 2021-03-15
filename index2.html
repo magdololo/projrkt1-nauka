@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nawigacja BEM w kodzie</title>
-    <link rel="stylesheet" href="style2.css>">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
@@ -17,19 +17,21 @@
         <button class="button header__button">Wejdź</button>
     </header>
     <section class="main">
-        <div class="logo main__logo">
-            <img class="logo__img" src="">
-            <p class="logo__text">Nazwa firmy</p>
-        </div>
-        <ul class="main__list-item">
-            <li class="main__item"><a class="main__link" href="">File</a></li>
-            <li class="main__item"><a class="main__link" href="">Edit</a></li>
-            <li class="main__item"><a class="main__link" href="">View</a></li>
-            <li class="main__item"><a class="main__link" href="">Help</a></li>
-        </ul>
-        </div>
+        <nav class="menu">
+            <div class="logo main__logo">
+                <img class="logo__img" src="">
+                <p class="logo__text">Nazwa firmy</p>
+            </div>
+            <ul class="menu__list-item">
+                <li class="menu__item"><a class="menu__link" href="">File</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--active" href="">Edit</a></li>
+                <li class="menu__item"><a class="menu__link" href="">View</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Help</a></li>
+            </ul>
+            </div>
+        </nav>
         <form class="form">
-            <input class="" type="text">
+            <input class="form__input" type="text">
             <button class="button form__button">Szukaj</button>
         </form>
         <article class="article">
@@ -39,7 +41,7 @@
                 <p class="article__autor">Autor: Jan Nowak</p>
             </h3>
             <p class="article__paragraph">Lorem ipsum...</p>
-            <h2 class="article_undertitle">Sródtytuł</h2>
+            <h2 class="article__undertitle">Sródtytuł</h2>
             <p class="article__paragraph">Lorem ipsum...</p>
             <button class="button article__button">Czytaj dalej</button>
         </article>
