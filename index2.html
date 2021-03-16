@@ -9,46 +9,70 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 
-<body>
-    <header class="header">
+<body class="page">
+    <header class="header page__header">
         <img class="header__img">
-        <h1 class="header__first-slogan">slogan duzy</h1>
-        <h2 class="header__second-slogan">slogan mały</h2>
+        <h1 class="header__title header__title--large">slogan duzy</h1>
+        <h2 class="header__title header__title--medium">slogan mały</h2>
         <button class="button header__button">Wejdź</button>
     </header>
-    <section class="main">
-        <nav class="menu">
-            <div class="logo main__logo">
-                <img class="logo__img" src="">
-                <p class="logo__text">Nazwa firmy</p>
-            </div>
-            <ul class="menu__list-item">
-                <li class="menu__item"><a class="menu__link" href="">File</a></li>
-                <li class="menu__item"><a class="menu__link menu__link--active" href="">Edit</a></li>
-                <li class="menu__item"><a class="menu__link" href="">View</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Help</a></li>
-            </ul>
-            </div>
-        </nav>
+
+    <nav class="menu page-nav">
+        <div class="logo menu__logo">
+            <img class="logo__img" src="">
+            <span class="logo__name">Nazwa firmy</span>
+        </div>
+        <ul class="menu__list-item">
+            <li class="menu__item"><a class="menu__link" href="">File</a></li>
+            <li class="menu__item menu__item--is-open"><a class="menu__link" href="">Edit</a></li>
+            <li class="menu__item"><a class="menu__link" href="">View</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Help</a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="articles page__articles">
         <form class="form">
             <input class="form__input" type="text">
-            <button class="button form__button">Szukaj</button>
+            <button class="button form__button button--italic" type="submit">Szukaj</button>
+            <!--form__button sluzy do pozycjonowania a do zmiany styly uzyjemy modificatora button--italic-->
         </form>
         <article class="article">
             <h1 class="article__title">Tytuł artykułu</h1>
-            <h3 class="article__date-and-autor">
-                <p class="article__date">Data produkcji -20.07.2019</p>
-                <p class="article__autor">Autor: Jan Nowak</p>
-            </h3>
+            <div class="article__info">
+                <span class="article__publication-date">Data produkcji -20.07.2019</span>
+                <span class="article__autor">Autor: Jan Nowak</span>
+            </div>
             <p class="article__paragraph">Lorem ipsum...</p>
-            <h2 class="article__undertitle">Sródtytuł</h2>
+            <h2 class="article__subtitle">Sródtytuł</h2>
+            <p class="article__paragraph">Lorem ipsum...</p>
+            <button class="button article__button">Czytaj dalej</button>
+        </article>
+        <article class="article">
+            <h1 class="article__title">Tytuł artykułu</h1>
+            <div class="article__info">
+                <span class="article__publication-date">Data produkcji -20.07.2019</span>
+                <span class="article__autor">Autor: Jan Nowak</span>
+            </div>
+            <p class="article__paragraph">Lorem ipsum...</p>
+            <h2 class="article__subtitle">Sródtytuł</h2>
+            <p class="article__paragraph">Lorem ipsum...</p>
+            <button class="button article__button">Czytaj dalej</button>
+        </article>
+        <article class="article">
+            <h1 class="article__title">Tytuł artykułu</h1>
+            <div class="article__info">
+                <span class="article__publication-date">Data produkcji -20.07.2019</span>
+                <span class="article__autor">Autor: Jan Nowak</span>
+            </div>
+            <p class="article__paragraph">Lorem ipsum...</p>
+            <h2 class="article__subtitle">Sródtytuł</h2>
             <p class="article__paragraph">Lorem ipsum...</p>
             <button class="button article__button">Czytaj dalej</button>
         </article>
     </section>
-    <footer class="footer">
-        <p class="copyright">Copyright</p>
-        <p class="footer__adres">Adres</p>
+    <footer class="footer page__footer">
+        <p class="footer__copyright-info">Copyright</p>
+        <address class="footer__address">Adres</address>
     </footer>
 </body>
 
