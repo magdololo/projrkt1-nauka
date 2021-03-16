@@ -15,14 +15,14 @@
      height: 600px;
  }
 
- .header__first-slogan {
+ .header__title--large {
      position: absolute;
      left: 120px;
      top: 100px;
      font-size: 2em;
  }
 
- .header__second-slogan {
+ .header__title--medium {
      position: absolute;
      left: 120px;
      top: 150px;
@@ -38,6 +38,10 @@
      position: absolute;
      right: 200px;
      bottom: 200px;
+ }
+
+ .menu {
+     margin: 20px 100px;
  }
 
  .main {
@@ -71,12 +75,13 @@
      text-decoration: none;
  }
 
- .menu__link--active {
+ .menu__item--is-open {
      color: lightgrey;
  }
 
  .form {
      float: right;
+     margin-right: 100px;
  }
 
  .form__input {
@@ -84,24 +89,24 @@
  }
 
  .article {
-     margin-top: 50px;
+     margin: 50px 100px;
  }
 
- .article__date-and-autor {
+ .article__info {
      display: flex;
      font-size: 1.1em;
      font-weight: normal;
      margin: 0;
  }
 
- .article__date,
+ .article__publication-date,
  .article__autor {
      margin: 0;
      margin-right: 20px;
 
  }
 
- .article__undertitle {
+ .article__subtitle {
      font-size: 1em;
  }
 
